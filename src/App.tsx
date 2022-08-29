@@ -6,8 +6,8 @@ import TodoFooter from './todo/TodoFooter';
 import { useReducer } from 'react';
 import UssEffectComponent from './UseEffect/UseEffectComponent';
 import UseMemoComponent from './UseMemo/UseMemo';
-import UseImperativeHandle from './newHooks/UseImperativHandleComponent';
-import UseLayoutEffect from './newHooks/UseLayoutEffect';
+import UseImperativeHandleComponent from './newHooks/UseImperativHandleComponent';
+import LayoutEffect from './newHooks/UseLayoutEffect';
 
 
 function reducer(state: any, action: any) {
@@ -92,7 +92,7 @@ return (
     />
     <TodoFooter 
        todos={todos}
-        cleareCompleted={() => {
+       clearCompleted={() => {
            dispatch({
             type: 'cleare-checked-todo'
            })
@@ -106,10 +106,10 @@ return (
     <UseMemoComponent />
     <br />
     <h2>UseImperativHandle</h2>
-    <UseImperativeHandle />
+    <UseImperativeHandleComponent />
     <br/>
     <h2>UseLayoutEffect</h2>
-    <UseLayoutEffect />
+    <LayoutEffect />
   </div>
 );
 }

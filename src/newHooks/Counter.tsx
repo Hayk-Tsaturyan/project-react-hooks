@@ -1,7 +1,6 @@
-import { type } from '@testing-library/user-event/dist/type';
 import { forwardRef, useImperativeHandle, useState} from 'react';
 
-export const Counter = forwardRef((props: any, ref: any) => {
+export const Counter = forwardRef(( ref: any) => {
     const [count, setCount] = useState(0);
     const increment = () => setCount(count + 1);
 

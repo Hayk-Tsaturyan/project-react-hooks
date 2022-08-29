@@ -1,7 +1,7 @@
 
-import React, { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 
-function UseLayoutEffect() {
+function LayoutEffect() {
     const [value, setValue] = useState<number>(0);
 
     useLayoutEffect(() => {
@@ -17,7 +17,7 @@ console.log('render', value);
  )
 }
 
-export default UseLayoutEffect;
+export default LayoutEffect;
 
 
 

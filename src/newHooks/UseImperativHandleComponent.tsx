@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Counter } from './Counter';
 
-function UseImperativeHandle() {
+function UseImperativeHandleComponent() {
     const ref = useRef<any>();
 
     return (
@@ -14,7 +14,7 @@ function UseImperativeHandle() {
     )
 }
 
-export default UseImperativeHandle;
+export default UseImperativeHandleComponent;
 
 
 

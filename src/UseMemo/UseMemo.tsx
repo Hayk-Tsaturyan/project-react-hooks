@@ -1,6 +1,5 @@
-
-import { useState, useCallback, useMemo } from 'react';
-import VideoPlayer from './VideoPlayer';
+import { useState, useCallback, useMemo } from "react";
+import VideoPlayer from "./VideoPlayer";
 
 function UseMemoComponent() {
   const [text, setText] = useState("");
@@ -11,25 +10,21 @@ function UseMemoComponent() {
   const videoData = useMemo(() => {
     return {
       url: "https://www.w3schools.com/html/mov_bbb.mp4",
-      title: "Bunny move"
-    }
+      title: "Bunny movie",
+    };
   }, []);
 
   return (
     <div className="App">
-      <input 
+      <input
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
       <span>{text}</span>
 
-      <div>Video is {isPlaying ? 'playing' : 'pause'}</div>
-      <VideoPlayer
-        src={videoData} 
-        onPlay={onPlay}
-        onPause={onPause}
-       />
+      <div>Video is {isPlaying ? "playing" : "pause"}</div>
+      <VideoPlayer src={videoData} onPlay={onPlay} onPause={onPause} />
     </div>
   );
 }
